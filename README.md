@@ -9,7 +9,7 @@ the code.
 
 ## Example
 You can use the following example to use the program.
-
+Please feel free to use your own numbers. 
 
 ```{r}
 Enter rows and columns for first matrix: 4 5
