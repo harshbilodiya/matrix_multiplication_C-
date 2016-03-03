@@ -20,7 +20,7 @@ int main()
 /* If colum of first matrix in not equal to row of second matrix, asking user to enter the size of matrix again. */
     while (c1!=r2)
     {
-        std::cout << "Error! column of first matrix not equal to row of second.";
+        std::cout << "Error! column of first matrix not equal to row of second." << std::endl;
         std::cout << "Enter rows and columns for first matrix: ";
         std::cin >> r1 >> c1;
         std::cout << "Enter rows and columns for second matrix: ";
