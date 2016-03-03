@@ -65,7 +65,7 @@ int main()
     for(i=0; i<r1; ++i)
     for(j=0; j<c2; ++j)
     {
-        std::cout << " " << mult[i][j];
+        std::cout << "  " << mult[i][j];
         if(j==c2-1)
             std::cout << std::endl;
     }
