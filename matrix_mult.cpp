@@ -30,41 +30,41 @@ int main()
 
 /* Storing elements of first matrix. */
     std::cout << std::endl << "Enter elements of matrix 1:" << std::endl;
-    for(i=0; i<r1; ++i)
-    for(j=0; j<c1; ++j)
+    for(i=0; i<r1; i++)
+    for(j=0; j<c1; j++)
     {
-        std::cout << "Enter element a" << i+1 << j+1 << " : ";
+        std::cout << "Enter element a[" << i+1 <<  "][" << j+1 << "] : ";
         std::cin >> a[i][j];
     }
 
 /* Storing elements of second matrix. */
     std::cout << std::endl << "Enter elements of matrix 2:" << std::endl;
-    for(i=0; i<r2; ++i)
-    for(j=0; j<c2; ++j)
+    for(i=0; i<r2; i++)
+    for(j=0; j<c2; j++)
     {
-        std::cout << "Enter element b" << i+1 << j+1 << " : ";
+        std::cout << "Enter element b[" << i+1 << "][" << j+1 << "] : ";
         std::cin >> b[i][j];
     }
 
 /* Initializing elements of matrix mult to 0.*/
-    for(i=0; i<r1; ++i)
-    for(j=0; j<c2; ++j)
+    for(i=0; i<r1; i++)
+    for(j=0; j<c2; j++)
     {
        mult[i][j]=0;
     }
 
 /* Multiplying matrix a and b and storing in array mult. */
-    for(i=0; i<r1; ++i)
-    for(j=0; j<c2; ++j)
-    for(k=0; k<c1; ++k)
+    for(i=0; i<r1; i++)
+    for(j=0; j<c2; j++)
+    for(k=0; k<c1; k++)
     {
         mult[i][j]+=a[i][k]*b[k][j];
     }
 
 /* Displaying the multiplication of two matrix. */
    std:: cout << std::endl << "Output Matrix: " << std::endl;
-    for(i=0; i<r1; ++i)
-    for(j=0; j<c2; ++j)
+    for(i=0; i<r1; i++)
+    for(j=0; j<c2; j++)
     {
         std::cout << std::setw(4) <<  " " << mult[i][j];
         if(j==c2-1)
